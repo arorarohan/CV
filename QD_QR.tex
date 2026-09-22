@@ -1,10 +1,7 @@
 % =====================================================================
 %  Rohan Arora -- Resume (Quant Developer / QR-engineering track)
 %  Compiler: pdfLaTeX
-%  Base: original.tex, restructured toward quant dev per earlier review.
-%  See %TODO comments throughout for items that need YOUR input --
-%  real numbers, a real link, or a decision on what to cut.
-% =====================================================================
+%=====================================================================
 
 \documentclass[11pt]{article}
 
@@ -56,7 +53,7 @@ Cambridge engineering student who pairs applied statistics and algorithmic reaso
 % Relabeled and reordered this line only -- same skills, no additions.
 % Algorithmic/quantitative items now lead instead of trailing behind
 % Computer Vision, since that's what a QD screener is scanning for.
-\textbf{Algorithms \& Applied Math:}\quad\quad Dynamic Programming \sep Time-Series Analysis (DTW) \sep Applied Statistics \sep Recommender Systems \sep Computer Vision
+\textbf{Algorithms \& Applied Maths:}\quad\quad Dynamic Programming \sep Time-Series Analysis (DTW) \sep Applied Statistics \sep Recommender Systems \sep Computer Vision
 
 \textbf{Infrastructure:}\quad\quad Flutter \sep PostgreSQL \sep Cloudflare Workers\slash R2 \sep Agentic Coding (Claude Code) 
 
@@ -64,13 +61,9 @@ Cambridge engineering student who pairs applied statistics and algorithmic reaso
 % but off-target real estate on a track-specific CV. Still on the
 % ML/CV version if you want it there.
 
-% --------------------------- LANGUAGES --------------------------------
-\cvsection{Languages}
-English (native speaker) \sep Spanish (Intermediate) \sep Mandarin (Conversational)
-
 % --------------------------- EXPERIENCE --------------------------------
 \cvsection{Experience}
-\noindent\textbf{Technical Intern} MoovmyWay, Singapore\hfill\textit{Jul 2026 -- Sep 2026}\par
+\noindent\textbf{Technical Intern} MoovMyWay, Singapore\hfill\textit{Jul 2026 -- Sep 2026}\par
 \begin{itemize}
   \item Built a near-parameter-free DTW alignment algorithm to quickly and accurately segment golf swings. Diagnosed why previous rule-based and HSMM golf-swing phase detection failed: gates loose enough to generalize across body geometry and tempo also accepted non-golf motion, while tightening them overfit to a single person's swing. Cut timing error by nearly 10x, solving the core issue blocking rollout of the app.
   \item Designed a model to judge athletes' body-positions during a golf swing, and calibrated it to balance false corrections with uncaught mistakes. Earned the approval of a professional golf coach.
@@ -79,15 +72,11 @@ English (native speaker) \sep Spanish (Intermediate) \sep Mandarin (Conversation
 \end{itemize}
 
 \vspace{4pt}
-\noindent\textbf{Technical Intern} MoovmyWay, Singapore\hfill\textit{Jul 2025 -- Sep 2025}\par
+\noindent\textbf{Technical Intern} MoovMyWay, Singapore\hfill\textit{Jul 2025 -- Sep 2025}\par
 \begin{itemize}
   \item Built a custom video stabilization pipeline using OpenCV that outperformed commercial off-the-shelf solutions for high-motion content, which the organization still uses routinely over a year later.
   \item Accelerated experimentation by developing a model-agnostic person detection framework from scratch, helping the business rapidly prototype their early-stage product.
   \item Optimized video analysis throughput by implementing multi-threaded processing across CPU/GPU processing modes, allowing inference to be run on mobile devices without UX-breaking waiting times.
-  % TODO: the wireframes/UX bullet from the original is cut here --
-  % it's real work, but it's the least quant-relevant bullet in this
-  % role and this track can least afford to carry it. Add it back if
-  % you'd rather keep four bullets than three.
 \end{itemize}
 
 \vspace{4pt}
@@ -105,10 +94,6 @@ English (native speaker) \sep Spanish (Intermediate) \sep Mandarin (Conversation
 \begin{itemize}
   \item Second-year grade: 2:1 (69\%, 1 point off First Class)
   \item Best paper: Mathematical Methods (8 points above average).
-  % Reordered this list only -- same modules, no additions or removals.
-  % Quant-relevant modules now lead; hardware-heavy modules (RF,
-  % semiconductors, photonics) trail, since they're true but not what
-  % a QD/QR screener is scanning for.
   \item Third-year modules: Statistical Signal Processing, Information Theory, Inference, Mathematical Methods (Linear Algebra, Stochastic Processes, Optimization), Signals \& Systems, Systems \& Control, RF Electronics, Semiconductor Engineering, Digital Electronics, Photonics
   \item Extra-curricular activity: Men's Captain of Wolfson College Boat Club
   \item Student bar staff at Wolfson College
@@ -122,5 +107,9 @@ English (native speaker) \sep Spanish (Intermediate) \sep Mandarin (Conversation
   \item Physics, Chemistry and Mathematics at Higher Level.
   \item Activities: House Captain, Model United Nations, Robotics.
 \end{itemize}
+
+% --------------------------- LANGUAGES --------------------------------
+\cvsection{Languages}
+English (native speaker) \sep Spanish (Advanced, C1) \sep Mandarin (Conversational)
 
 \end{document}
