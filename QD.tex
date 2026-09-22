@@ -47,22 +47,13 @@
   \href{mailto:arorarohan907@gmail.com}{arorarohan907@gmail.com}
   \sep
   \href{tel:+447502172999}{+44 7502 172999}
-  % TODO: add a GitHub / portfolio link once you have one you're proud
-  % of -- reportedly the first thing recruiters check, and you
-  % currently have nothing linkable on this CV. e.g.:
-  % \sep \href{https://github.com/<you>}{github.com/<you>}
+\sep \href{https://github.com/arorarohan}{github.com/arorarohan}
 \end{center}
 
 \vspace{6pt}
 
-% Same trim as the ML/CV version -- cut the vague "broad range of
-% technical interests and highly developed people skills" filler.
-% TODO: this summary still doesn't say anything about markets, trading
-% or quant work -- because right now nothing on the CV backs that up.
-% Once you have something real to point to, a role-specific line here
-% would do more work than this generic paragraph. Flagging, not doing
-% it for you, since there's nothing true to write yet.
-An integrated bachelor's/master's student experienced in Computer Vision, Machine Learning and agentic software development, with a track record of delivering technical solutions to real-world problems. Former Army sergeant with a strong leadership background.
+%---------------HEADLINE-------------
+Cambridge engineering student who pairs applied statistics and algorithmic reasoning with production software engineering to turn data-constrained problems into shipped, working systems.
 
 % ----------------------------- SKILLS ---------------------------------
 %inline list
@@ -88,24 +79,10 @@ English (native speaker) \sep Spanish (Intermediate) \sep Mandarin (Conversation
 \cvsection{Experience}
 \noindent\textbf{Technical Intern} MoovmyWay, Singapore\hfill\textit{Jul 2026 -- Sep 2026}\par
 \begin{itemize}
-  \item Used AI coding agents (Claude Code) as the primary implementation tool across two production codebases, shipping 150+ pull requests while personally owning system design, debugging, and validation for every change.
-  \item Replaced a set of hand-tuned, fixed-threshold, overfitted rules used to detect the phases of a golf swing with a general timing and alignment algorithm that adapts automatically to swing speed without needing manual retuning.
-  \item Tracked down a device-level synchronization bug that, combined with the new algorithm, cut timing error roughly 10x -- resolving the blocker that had kept the app from being production-ready.
-  \item Designed a Computer Vision system that automatically judges an athlete's body position at each stage of a movement and calibrated it against a broad dataset of golf swings, delivering feedback that earned the approval of a professional golf coach.
-  % TODO: soft claim -- swap in a real accuracy/benchmark number if
-  % you have one.
-  \item Redesigned a recommendation feature that had been switched off in production for being extremely slow, replacing the full recompute with a precomputed similarity graph updated incrementally on each request instead of rebuilt from scratch.
-  % TODO: "faster than the disabled baseline" (below) is a soft claim --
-  % replace with a real number if you have one, e.g. "Nx faster" or a
-  % latency figure in ms. This is your strongest algorithmic bullet for
-  % this track, so it's the one most worth a real number.
-  \item Caught roughly 10 production-impacting bugs in self-review before shipping it live, restoring the feature end to end, faster than the disabled baseline.
-  % Condensed from the original -- kept the facts (you spotted it,
-  % pitched it, shipped it, it became the main marketing hook), cut the
-  % "family bonding" framing, which reads as product/marketing rather
-  % than engineering to a quant-dev screener. Full version is in the
-  % ML/CV file if you want it back.
-  \item Identified, pitched, and shipped a new feature (Party Mode) after noticing it was the most engaging part of the app in testing; it is now the product's primary marketing hook.
+  \item Built a near-parameter-free DTW alignment algorithm to quickly and accurately segment golf swings. Diagnosed why previous rule-based and HSMM golf-swing phase detection failed: gates loose enough to generalize across body geometry and tempo also accepted non-golf motion, while tightening them overfit to a single person's swing. Cut timing error by nearly 10x, solving the core issue blocking rollout of the app.
+  \item Designed a model to judge athletes' body-positions during a golf swing, and calibrated it to balance false corrections with uncaught mistakes. Earned the approval of a professional golf coach.
+  \item Redesigned a recommendation algorithm that had been switched off in production for being extremely slow, replacing the full recompute with a precomputed similarity graph updated incrementally on each request. Reduced compute time from 6000 ms to 73 ms.
+  \item Identified, pitched, and shipped a new feature (Party Mode) after noticing it was the most engaging part of the app in testing; it is now the company's primary marketing hook.
 \end{itemize}
 
 \vspace{4pt}
@@ -121,15 +98,6 @@ English (native speaker) \sep Spanish (Intermediate) \sep Mandarin (Conversation
 \end{itemize}
 
 \vspace{4pt}
-\noindent\textbf{Intern} Junior Achievement Singapore\hfill\textit{Apr 2024 -- Jul 2024}\par
-\begin{itemize}
-  % Merged the two original bullets into one, same as the ML/CV
-  % version -- this section carries the least weight for either
-  % technical track.
-  \item Taught work-readiness, financial literacy, and a machine learning curriculum to hundreds of students, and organized entrepreneurship/pitch competitions with 100+ participants, including the FedEx/JA International Trade Competition Asia Pacific Finals.
-\end{itemize}
-
-\vspace{4pt}
 \noindent\textbf{Section Commander} Singapore Army\hfill\textit{Mar 2022 -- Jan 2024}\par
 \begin{itemize}
   \item Selected to lead and train recruits based on high performance in Infantry training.
@@ -142,7 +110,7 @@ English (native speaker) \sep Spanish (Intermediate) \sep Mandarin (Conversation
 \noindent\textbf{University of Cambridge}\hfill\textit{2024 -- 2028}\par
 \textit{BA/MEng Information \& Computer Engineering}
 \begin{itemize}
-  \item Second-year grade: 69\% (high 2:1).
+  \item Second-year grade: 2:1 (69\%, 1 point off First Class)
   \item Best paper: Mathematical Methods (8 points above average).
   % Reordered this list only -- same modules, no additions or removals.
   % Quant-relevant modules now lead; hardware-heavy modules (RF,
