@@ -1,14 +1,144 @@
-\documentclass{article}
-\usepackage{graphicx} % Required for inserting images
+% =====================================================================
+%  Rohan Arora -- CV
+%  Rebuilt as plain, free-text LaTeX (no tables, no two-column layout,
+%  no colour). Paste this whole file into a blank Overleaf project.
+%  Compiler: pdfLaTeX (Overleaf's default) works fine.
+%
+%  HOW TO EDIT
+%  - Every entry below is just plain text + \textbf/\textit/\hfill/itemize.
+%    To add a new job/degree, copy an existing block and edit the text --
+%    nothing else will move or break.
+%  - Section headings are made with \cvsection{...}; it just prints a
+%    bold heading and a rule underneath. Use it for any new section.
+%  - Look for "% TODO" comments -- those flag things I noticed while
+%    converting but did NOT change, per your instructions.
+% =====================================================================
 
-\title{CV}
-\author{Rohan Arora}
-\date{September 2026}
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.85in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{parskip}
+
+\setlist[itemize]{leftmargin=*, itemsep=2pt, topsep=3pt, parsep=0pt}
+
+\pagestyle{empty} % no page numbers/headers -- delete this line if you want them
+
+% ---- simple section-heading command: bold caps + a rule underneath ----
+\newcommand{\cvsection}[1]{%
+  \vspace{10pt}%
+  \noindent{\large\bfseries\MakeUppercase{#1}}\par
+  \vspace{-4pt}\noindent\rule{\linewidth}{0.7pt}\vspace{4pt}%
+}
+
+% ---- inline-list separator: a vertical bar, deliberately NOT the same
+% glyph as the itemize bullet below, so an inline list (header contact
+% line, Skills, Languages) never reads as a broken bulleted list. ----
+\newcommand{\sep}{\quad\textbar\quad}
 
 \begin{document}
 
-\maketitle
+% ----------------------------- HEADER --------------------------------
+% Original had "Contact" as its own sidebar block; moved it up here
+% since that's the conventional place for it on a single-column CV.
+\begin{center}
+  {\Huge\bfseries Rohan Arora}\par
+  \vspace{4pt}
+  {\Large\itshape Third-year Engineering Student, University of Cambridge}\par
+  \vspace{6pt}
+  \href{mailto:Arorarohan907@gmail.com}{Arorarohan907@gmail.com}
+  \sep
+  \href{tel:+447502172999}{+44 7502 172999}
+  % TODO: your CV has the email as "Arorarohan907@gmail.com" (capital A) --
+  % looks like Word auto-capitalised it. Left exactly as written; fix if
+  % that's not how you actually spell it.
+\end{center}
 
-\section{Introduction}
+\vspace{6pt}
+
+An integrated bachelor's/master's student with a broad range of technical interests and highly developed people skills. Experienced in Computer Vision, Machine Learning and agentic software development. Former Army sergeant with strong leadership background and a track record of delivering technical solutions to real-world problems.
+
+% ----------------------------- SKILLS ---------------------------------
+% Original: a bulleted list of 9 single items in the sidebar. Rendered
+% here as an inline list so it doesn't eat a full column of vertical
+% space now that it's not sitting beside empty room. Swap back to
+% \begin{itemize}...\end{itemize} if you'd rather have it as a vertical
+% list -- either is a one-line change.
+\cvsection{Skills}
+Python\slash C\slash C++ \sep Computer Vision \sep Machine Learning \sep Agentic coding \sep Soldering\slash machine tools \sep Leadership \sep Problem-solving \sep Time management \sep Organization
+
+% --------------------------- LANGUAGES --------------------------------
+\cvsection{Languages}
+English (native speaker) \sep Spanish (Intermediate) \sep Mandarin (Conversational)
+
+% --------------------------- EXPERIENCE --------------------------------
+\cvsection{Experience}
+
+% Role in bold, employer in regular weight, date flush right -- this
+% mirrors the weight distinction your original file used.
+\noindent\textbf{Technical Intern} MoovmyWay, Singapore\hfill\textit{Jul 2026 -- Sep 2026}\par
+\begin{itemize}
+  \item Used AI coding agents (Claude Code) as the primary implementation tool across two production codebases, shipping 150+ pull requests while personally owning system design, debugging, and validation for every change.
+  \item Replaced a set of hand-tuned, fixed-threshold, overfitted rules used to detect the phases of a golf swing with a general timing and alignment algorithm that adapts automatically to swing speed without needing manual retuning. Also tracked down a device-level synchronization bug, combining to cut timing error roughly 10x. This solved the problem that kept the app from being production-ready.
+  \item Designed a Computer Vision system that automatically judges an athlete's body position at each stage of a movement and calibrated it against a broad dataset of golf swings, delivering useful feedback to users that earned the approval of a professional golf coach.
+  \item Redesigned a recommendation feature that had previously been switched off in production for being extremely slow; replaced it with a precomputed similarity graph that updates incrementally instead of recomputing from scratch on every request, restoring the feature end to end, faster than the disabled baseline, and catching roughly 10 production-impacting bugs in self-review before deploying it live.
+\end{itemize}
+
+\vspace{4pt}
+\noindent\textbf{Technical Intern} MoovmyWay, Singapore\hfill\textit{Jul 2025 -- Sep 2025}\par
+\begin{itemize}
+  \item Built a custom video stabilization pipeline using OpenCV that outperformed commercial off-the-shelf solutions for high-motion content, which the organization still uses routinely over a year later.
+  \item Accelerated experimentation by developing a model-agnostic person detection framework from scratch, helping the business rapidly prototype their early-stage product.
+  \item Optimized video analysis throughput by implementing multi-threaded processing across CPU/GPU processing modes, allowing inference to be run on mobile devices without UX-breaking waiting times.
+  \item Developed wireframes and implemented UX improvements for the dance learning platform to boost user engagement and ease of use.
+\end{itemize}
+
+\vspace{4pt}
+\noindent\textbf{Intern} Junior Achievement Singapore\hfill\textit{Apr 2024 -- Jul 2024}\par
+\begin{itemize}
+  \item Independently taught work-readiness and financial literacy courses to hundreds of students; developed a machine learning curriculum for secondary students and produced marketing materials.
+  % TODO: in the original file this next bullet was accidentally typeset
+  % in a different (heading) style rather than as a normal bullet -- an
+  % artifact of the Word template, not a content change. It reads
+  % correctly as a bullet here.
+  \item Organized and facilitated entrepreneurship/pitch competitions with 100+ participants, including the FedEx/JA International Trade Competition Asia Pacific Finals.
+\end{itemize}
+
+\vspace{4pt}
+\noindent\textbf{Section Commander} Singapore Army\hfill\textit{Mar 2022 -- Jan 2024}\par
+\begin{itemize}
+  \item Selected to lead and train recruits based on high performance in Infantry training.
+  \item Led, taught and mentored new recruits, receiving the BMTC Commander's Coin (ranked top 1\% of unit) for demonstrating exceptional operational leadership and personnel management.
+\end{itemize}
+
+% --------------------------- EDUCATION --------------------------------
+\cvsection{Education}
+
+% TODO: original text is "University of cambridge" (lowercase "c") --
+% the Word template was auto-uppercasing headings for display, which
+% masked this. Left as written; capitalize if you'd like.
+\noindent\textbf{University of cambridge}\hfill\textit{2024 -- 2028}\par
+% TODO: original text is "Ba/Meng Information \& computer engineering" --
+% likely meant "BA/MEng". Left exactly as written.
+\textit{Ba/Meng Information \& computer engineering}
+\begin{itemize}
+  \item Second-year grade - 2:1 (Class II Honours, Division I).
+  \item Third-year modules -- Signals \& Systems, Statistical Signal Processing, Information Theory, Systems \& Control, Inference, Mathematical Methods (Linear Algebra, Stochastic Processes, Optimization), RF Electronics, Semiconductor Engineering, Digital Electronics, Photonics
+  \item Extra-curricular activity -- Men's Captain of Wolfson College Boat Club
+  \item Student bar staff at Wolfson College
+\end{itemize}
+
+\vspace{4pt}
+% TODO: original text is all lowercase: "anglo-chinese school
+% (international) international baccalaureate". Left exactly as written.
+\noindent\textbf{anglo-chinese school (international)} international baccalaureate\hfill\textit{2020 -- 2021}\par
+\begin{itemize}
+  \item Grade obtained: 45 out of 45.
+  \item Physics, Chemistry and Mathematics at Higher Level.
+  \item Activities - House Captain, Model United Nations, Robotics.
+\end{itemize}
 
 \end{document}
