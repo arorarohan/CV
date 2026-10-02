@@ -54,9 +54,9 @@ Cambridge engineering student who pairs applied statistics and algorithmic reaso
 % Relabeled and reordered this line only -- same skills, no additions.
 % Algorithmic/quantitative items now lead instead of trailing behind
 % Computer Vision, since that's what a QD screener is scanning for.
-\textbf{Algorithms \& Applied Maths:}\quad\quad Dynamic Programming \sep Time-Series Analysis (DTW) \sep Applied Statistics \sep Recommender Systems \sep Computer Vision
+\textbf{Algorithms \& Applied Maths:}\quad\quad Dynamic Programming \sep Time-Series Analysis (Dynamic Time Warping) \sep Applied Statistics \sep Statistical Signal Processing \sep Recommender Systems \sep Computer Vision
 
-\textbf{Infrastructure:}\quad\quad Flutter \sep PostgreSQL \sep Cloudflare Workers\slash R2 \sep Agentic Coding (Claude Code) 
+\textbf{Infrastructure:}\quad\quad Flutter \sep PostgreSQL \sep Cloudflare Workers\slash R2 \sep Git \sep Agentic Coding (Claude Code)
 
 % Dropped "Other: Soldering/machine tools" for this version -- true,
 % but off-target real estate on a track-specific CV. Still on the
@@ -64,24 +64,24 @@ Cambridge engineering student who pairs applied statistics and algorithmic reaso
 
 % --------------------------- EXPERIENCE --------------------------------
 \cvsection{Experience}
-\noindent\textbf{Technical Intern} MoovMyWay, Singapore\hfill\textit{Jul 2026 -- Sep 2026}\par
+\noindent\textbf{Technical Intern}, MoovMyWay, Singapore\hfill\textit{Jul 2026 -- Sep 2026}\par
 \begin{itemize}
-  \item Built a near-parameter-free DTW alignment algorithm to quickly and accurately segment golf swings. Diagnosed why previous rule-based and HSMM golf-swing phase detection failed: gates loose enough to generalize across body geometry and tempo also accepted non-golf motion, while tightening them overfit to a single person's swing. Cut timing error by nearly 10x, solving the core issue blocking rollout of the app.
+  \item Built a near-parameter-free time-series alignment algorithm (Dynamic Time Warping, DTW) to quickly and accurately segment golf swings. Diagnosed why previous rule-based and hidden semi-Markov model (HSMM) phase detection failed: gates loose enough to generalize across body geometry and tempo also accepted non-golf motion, while tightening them overfit to a single person's swing. Cut timing error by nearly 10x, solving the core issue blocking rollout of the app.
   \item Designed a model to judge athletes' body-positions during a golf swing, and calibrated it to balance false corrections with uncaught mistakes. Earned the approval of a professional golf coach.
-  \item Redesigned a recommendation algorithm that had been switched off in production for being extremely slow, replacing the full recompute with a precomputed similarity graph updated incrementally on each request. Reduced compute time from 6000 ms to 73 ms.
+  \item Redesigned a recommendation algorithm that had been switched off in production for being extremely slow, replacing the full recompute with a precomputed similarity graph updated incrementally on each request. Reduced latency from 6000 ms to 73 ms.
   \item Identified, pitched, and shipped a new feature (Party Mode) after noticing it was the most engaging part of the app in testing; it is now the company's primary marketing hook.
 \end{itemize}
 
 \vspace{4pt}
-\noindent\textbf{Technical Intern} MoovMyWay, Singapore\hfill\textit{Jul 2025 -- Sep 2025}\par
+\noindent\textbf{Technical Intern}, MoovMyWay, Singapore\hfill\textit{Jul 2025 -- Sep 2025}\par
 \begin{itemize}
   \item Built a custom video stabilization pipeline using OpenCV that outperformed commercial off-the-shelf solutions for high-motion content, which the organization still uses routinely over a year later.
-  \item Accelerated experimentation by developing a model-agnostic person detection framework from scratch, helping the business rapidly prototype their early-stage product.
+  \item Accelerated experimentation by developing a model-agnostic object detection framework for tracking people from scratch, helping the business rapidly prototype their early-stage product.
   \item Optimized video analysis throughput by implementing multi-threaded processing across CPU/GPU processing modes, allowing inference to be run on mobile devices without UX-breaking waiting times.
 \end{itemize}
 
 \vspace{4pt}
-\noindent\textbf{Section Commander} Singapore Army\hfill\textit{Mar 2022 -- Jan 2024}\par
+\noindent\textbf{Section Commander}, Singapore Army\hfill\textit{Mar 2022 -- Jan 2024}\par
 \begin{itemize}
   \item Led, taught and mentored new recruits, receiving the BMTC Commander's Coin (ranked top 1\% of unit) for demonstrating exceptional operational leadership and personnel management.
 \end{itemize}
